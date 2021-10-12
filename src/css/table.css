@@ -1,0 +1,41 @@
+form.form-inline.my-2.my-lg-0 {
+  display: inherit;
+  /* margin-left: 5px !important; */
+}
+form.form-inline.my-2.my-lg-0 > * {
+  margin-right: 5px;
+}
+
+.dropdown-menu {
+  margin-top: 5px !important;
+}
+button#dropdownMenuButton:hover {
+  color: #1ab394;
+}
+
+.dropdown .show {
+  border-color: #1ab394;
+}
+
+.btn-check:focus + .btn,
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(26 179 148) !important;
+}
+
+button.btn.btn-outline-success.my-2.my-sm-0 {
+  color: black;
+  border-color: white;
+}
+button.btn.btn-outline-success.my-2.my-sm-0:hover {
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  color: #1ab394;
+}
+@media (min-width: 989px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: space-around;
+  }
+}

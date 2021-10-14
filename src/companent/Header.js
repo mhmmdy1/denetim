@@ -3,13 +3,18 @@ import { FaUserAlt } from "react-icons/fa";
 import { IoExitOutline } from "react-icons/io5";
 import DataTable from "./DataTable";
 import Rapor1 from "./Rapor1";
+import Formsearch from "./Formsearch";
+import Chartjs from "./Chartjs";
 import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
 
 const Table1 = (props) => {
+
   return (
+    
+  
     <Router>
       <div>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <button
             className="navbar-toggler"
             type="button"
@@ -182,11 +187,43 @@ const Table1 = (props) => {
 
         <div>
           <Switch>
-            <Route path="/anasayfa">
-              <Rapor1/>          
+            <Route path="/home">
+              <Rapor1 />
             </Route>
-            <Route path="/tesistanımı">
-            <DataTable/>
+            <Route path="/mahaltipitanımı">
+              <div class="container margin40">
+                <Formsearch />
+                <hr></hr><br />
+                <DataTable />
+              </div>
+            </Route>
+            <Route path="/tesistipitanımı">
+              <div class="container margin40">
+                <Formsearch title="Product"/>
+                <hr></hr><br />
+                <DataTable title="" />
+              </div>
+            </Route>
+            <Route path="/hizmettanımı">
+              <div class="container margin40">
+                <Formsearch  title="Hizmet Tanımı Ekle"/>
+                <hr></hr><br />
+                <DataTable title="Hizmet Tanımı Adı" title2="asdasdsa"/>
+              </div>
+            </Route>
+            <Route path="/periyottanımı">
+              <div class="container margin40">
+                <Formsearch />
+                <hr></hr><br />
+                <DataTable title="Mahal Tipi"  />
+              </div>
+            </Route>
+            <Route path="/">
+              <div class="container margin40">
+                <Chartjs></Chartjs>
+                <Rapor1 /></div>
+            </Route>
+            <Route path="/contracts">
             </Route>
           </Switch>
         </div>

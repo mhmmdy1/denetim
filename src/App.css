@@ -15,6 +15,15 @@ body {
   }
 }
 
+.col-10.margin-20 {
+  margin-bottom: 20px;
+  padding-left: 40px;
+}
+
+footer.text-center.text-lg-start.bg-light.text-muted {
+  margin-top: 50px !important;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,6 +37,19 @@ body {
 
 .App-link {
   color: #61dafb;
+}
+
+a.dropdown-item:focus {
+  box-shadow: 0 0 0 0.25rem rgb(26 179 148) !important;
+  border-radius: 5px;
+  background-color: transparent;
+  color: black;
+  transition-duration: 0.5s;
+}
+a.dropdown-item:hover {
+  background-color: transparent;
+  color: #20c997;
+  transition-duration: 0.5s;
 }
 
 @keyframes App-logo-spin {

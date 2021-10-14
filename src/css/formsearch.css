@@ -1,0 +1,30 @@
+input.form-control.form-control-sm {
+  font-size: 18px;
+}
+
+button.btn.btn-primary.mb-2 {
+  display: inline-block;
+  width: 97%;
+  height: 35px;
+  line-height: 1;
+  margin: 5px 0px 0px 10px;
+}
+.col-10 {
+  flex: 0 0 auto;
+  width: 83%;
+  display: flex;
+}
+label.col-form-label {
+  margin: 5px 10px;
+}
+.col.col-12 {
+  display: -webkit-box;
+}
+
+.col-4 {
+  text-align: center;
+}
+.jsend {
+  display: flex !important;
+  justify-content: flex-end;
+}

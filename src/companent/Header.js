@@ -192,30 +192,30 @@ const Table1 = (props) => {
             </Route>
             <Route path="/mahaltipitanımı">
               <div class="container margin40">
-                <Formsearch />
+                <Formsearch  title="Mahal Tipi Ekle" title2="Mahal Tipi Adı *" title3="Mahal Tipi Kodu *"/>
                 <hr></hr><br />
-                <DataTable />
+                <DataTable title="Mahal Tipi Adı" title2="Mahal Tipi Kodu"/>
               </div>
             </Route>
             <Route path="/tesistipitanımı">
               <div class="container margin40">
-                <Formsearch title="Product"/>
+                <Formsearch title="Tesis Tipi ekle" title2="Tesis Tipi Adı *" title3="Tesis Tipi Kodu *"/>
                 <hr></hr><br />
-                <DataTable title="" />
+                <DataTable title="Tesis Tipi Adı" title2="Tesis Tipi Kodu" />
               </div>
             </Route>
             <Route path="/hizmettanımı">
               <div class="container margin40">
-                <Formsearch  title="Hizmet Tanımı Ekle"/>
+                <Formsearch  title="Hizmet ekle" title2="Hizmet Adı *" title3="Hizmet Kodu *" />
                 <hr></hr><br />
-                <DataTable title="Hizmet Tanımı Adı" title2="asdasdsa"/>
+                <DataTable title="Hizmet Tanımı Adı" title2="Hizmet Tanımı Kodu"/>
               </div>
             </Route>
             <Route path="/periyottanımı">
               <div class="container margin40">
                 <Formsearch />
                 <hr></hr><br />
-                <DataTable title="Mahal Tipi"  />
+                <DataTable title="Periyot Adı" title2="Başlangıç Tarihi"/>
               </div>
             </Route>
             <Route path="/">

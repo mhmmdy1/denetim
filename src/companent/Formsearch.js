@@ -104,7 +104,7 @@ export default class Formsearch extends Component {
                   
                     <div class="col-10 margin-20">
                       <label for="inputEmail3" class="col-form-label">
-                      {this.props.title}
+                      {this.props.title2}
                       </label>
                       <input
                         class="form-control form-control-sm  "
@@ -115,7 +115,7 @@ export default class Formsearch extends Component {
                     </div>
                     <div class="col-10 margin-20">
                       <label for="inputEmail3" class="col-form-label">
-                      Mahal Tipi Kodu *
+                      {this.props.title3}
                       </label>
                       <input
                         class="form-control form-control-sm  "

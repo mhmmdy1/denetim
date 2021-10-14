@@ -22,14 +22,14 @@ export default class DataTable extends Component {
                             <td>Aktif</td>
                         </tr>
                     </tbody>
-                    <tfoot>
+                    {/* <tfoot>
                         <tr>
                             <th>ID</th>
                             <th>Mahal Tipi Adı</th>
                             <th>Mahal Tipi Kodu</th>
                             <th>Durum</th>
                         </tr>
-                    </tfoot>
+                    </tfoot> */}
                 </table>
             </div>
         );

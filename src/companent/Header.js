@@ -213,7 +213,7 @@ const Table1 = (props) => {
             </Route>
             <Route path="/periyottanımı">
               <div class="container margin40">
-                <Formsearch />
+                <Formsearch title="Periyot ekle" title2="Periyot Adı *" title3="Periyot Kodu *" />
                 <hr></hr><br />
                 <DataTable title="Periyot Adı" title2="Başlangıç Tarihi"/>
               </div>

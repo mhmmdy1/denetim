@@ -5,6 +5,9 @@ import DataTable from "./DataTable";
 import Rapor1 from "./Rapor1";
 import Formsearch from "./Formsearch";
 import Chartjs from "./Chartjs";
+import Addmodal  from "../view/modal/Addmodal";
+import Addmodal1 from "../view/modal/AddMahal"; 
+
 import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
 
 const Table1 = (props) => {
@@ -193,13 +196,15 @@ const Table1 = (props) => {
             <Route path="/mahaltipitanımı">
               <div class="container margin40">
                 <Formsearch  title="Mahal Tipi Ekle" title2="Mahal Tipi Adı *" title3="Mahal Tipi Kodu *"/>
-                <hr></hr><br />
+                <Addmodal1 title="Mahal Tipi Ekle" title2="Mahal Tipi Adı *" title3="Mahal Tipi Kodu *"/>
+               <hr></hr><br />
                 <DataTable title="Mahal Tipi Adı" title2="Mahal Tipi Kodu"/>
               </div>
             </Route>
             <Route path="/tesistipitanımı">
               <div class="container margin40">
-                <Formsearch title="Tesis Tipi ekle" title2="Tesis Tipi Adı *" title3="Tesis Tipi Kodu *"/>
+                <Formsearch />
+                <Addmodal title="Tesis Tipi ekle" title2="Tesis Tipi Adı *" title3="Tesis Tipi Kodu *"/>
                 <hr></hr><br />
                 <DataTable title="Tesis Tipi Adı" title2="Tesis Tipi Kodu" />
               </div>

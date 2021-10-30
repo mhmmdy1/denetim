@@ -7,7 +7,10 @@ import Formsearch from "./Formsearch";
 import Chartjs from "./Chartjs";
 import Addmodal  from "../view/modal/Addmodal";
 import Addmodal1 from "../view/modal/AddMahal"; 
-
+import AddHizmet from "../view/modal/AddHizmet";
+import AddPeriyot from "../view/modal/AddPeriyot";
+import AddCustomer from "../view/modal/AddCustomer";
+import AddTesis from "../view/modal/AddTesis";
 import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
 
 const Table1 = (props) => {
@@ -137,6 +140,7 @@ const Table1 = (props) => {
                   className="dropdown-menu"
                   aria-labelledby="dropdownMenuButton"
                 >               
+              
                   <a  href="/">
                   <Link className="dropdown-item" to="/kullanicilar">Kullanıcılar</Link>
                   </a>
@@ -193,16 +197,26 @@ const Table1 = (props) => {
             <Route path="/home">
               <Rapor1 />
             </Route>
+            <Route path="/tesistanımı">
+              <div className="container margin40">
+                <Formsearch />
+                <AddTesis title="Tesis Ekle" title2="Tesis Tipi Adı *" title3="Tesis Tipi Kodu *"/>
+               <hr></hr><br />
+                <DataTable title="Tesis Tipi Adı" title2="Tesis Tipi Kodu"/>
+              </div>
+            </Route>
+
             <Route path="/mahaltipitanımı">
-              <div class="container margin40">
+              <div className="container margin40">
                 <Formsearch  title="Mahal Tipi Ekle" title2="Mahal Tipi Adı *" title3="Mahal Tipi Kodu *"/>
                 <Addmodal1 title="Mahal Tipi Ekle" title2="Mahal Tipi Adı *" title3="Mahal Tipi Kodu *"/>
                <hr></hr><br />
                 <DataTable title="Mahal Tipi Adı" title2="Mahal Tipi Kodu"/>
               </div>
             </Route>
+          
             <Route path="/tesistipitanımı">
-              <div class="container margin40">
+              <div className="container margin40">
                 <Formsearch />
                 <Addmodal title="Tesis Tipi ekle" title2="Tesis Tipi Adı *" title3="Tesis Tipi Kodu *"/>
                 <hr></hr><br />
@@ -210,23 +224,46 @@ const Table1 = (props) => {
               </div>
             </Route>
             <Route path="/hizmettanımı">
-              <div class="container margin40">
-                <Formsearch  title="Hizmet ekle" title2="Hizmet Adı *" title3="Hizmet Kodu *" />
+              <div className="container margin40">
+                <Formsearch />
+                <AddHizmet title="Hizmet Tipi ekle" title2="Hizmet Tipi Adı *" title3="Hizmet Tipi Kodu *"/>
                 <hr></hr><br />
                 <DataTable title="Hizmet Tanımı Adı" title2="Hizmet Tanımı Kodu"/>
               </div>
             </Route>
             <Route path="/periyottanımı">
-              <div class="container margin40">
-                <Formsearch title="Periyot Ekle" title2="Periyot Adı *" title3="Periyot Kodu *" />
+              <div className="container margin40">
+                <Formsearch/>
+                <AddPeriyot title="Periyot Ekle" title2="Periyot Adı *" title3="Periyot Kodu *"/>
                 <hr></hr><br />
                 <DataTable title="Periyot Adı" title2="Başlangıç Tarihi"/>
               </div>
             </Route>
+            <Route path="/kullanicilar">
+              <div className="container margin40">
+                <Formsearch/>
+                <AddCustomer title="Kullanıcı Ekle" title2="İsim-Soyisim *" title3="E-Mail *" title4="Şifre *"/>
+                <hr></hr><br />
+                <DataTable title="İsim Soyisim" title2="E-Mail"/>
+              </div>
+            </Route>
+            <Route path="/roller">
+              <div className="container margin40">
+                <Formsearch/>
+                <AddCustomer title="Kullanıcı Ekle" title2="İsim-Soyisim *" title3="E-Mail *" title4="Şifre *"/>
+                <hr></hr><br />
+                <DataTable title="İsim Soyisim" title2="E-Mail"/>
+              </div>
+            </Route>
             <Route path="/">
-              <div class="container margin40">
+              <div className="container margin40">
                 <Chartjs></Chartjs>
                 <Rapor1 /></div>
+            </Route>
+           
+            <Route path="/roller">
+              <div className="container margin40">               
+                </div>
             </Route>
             <Route path="/contracts">
             </Route>
